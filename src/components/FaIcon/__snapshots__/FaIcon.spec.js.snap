@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FaIcon spec render name 1`] = `
+<span
+  className="fa fa-pensil"
+/>
+`;
+
+exports[`FaIcon spec render spin 1`] = `
+<span
+  className="fa fa-pensil fa-spin"
+/>
+`;

@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select spec should render from string array 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Select
+    options={
+      Array [
+        "foo",
+        "bar",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Option
+          value="foo"
+        >
+          foo
+        </Option>,
+        <Option
+          value="bar"
+        >
+          bar
+        </Option>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "foo",
+        "nodeType": "function",
+        "props": Object {
+          "children": "foo",
+          "value": "foo",
+        },
+        "ref": null,
+        "rendered": "foo",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "bar",
+        "nodeType": "function",
+        "props": Object {
+          "children": "bar",
+          "value": "bar",
+        },
+        "ref": null,
+        "rendered": "bar",
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Option
+            value="foo"
+          >
+            foo
+          </Option>,
+          <Option
+            value="bar"
+          >
+            bar
+          </Option>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "foo",
+          "nodeType": "function",
+          "props": Object {
+            "children": "foo",
+            "value": "foo",
+          },
+          "ref": null,
+          "rendered": "foo",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "bar",
+          "nodeType": "function",
+          "props": Object {
+            "children": "bar",
+            "value": "bar",
+          },
+          "ref": null,
+          "rendered": "bar",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

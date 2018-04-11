@@ -1,0 +1,23 @@
+#npm
+node_modules/*
+back_dist/*
+**/node_modules/*
+**/yarn.lock
+!/yarn.lock
+*.log
+tmp/*
+.nyc_output/*
+coverage/*
+stats.json
+flow-typed/npm
+out/*
+
+#emacs
+\.#*
+*\.swp
+# other
+*~
+#macos
+.DS_Store
+dist/**
+#== generated end

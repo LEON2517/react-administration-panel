@@ -1,0 +1,71 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+  ],
+  "globals": {
+    "__CLIENT__": true,
+    "__DEBUG__": true,
+    "NODE_ENV": true,
+    "process.env.NODE_ENV": true,
+    "__IS_DEV__": true,
+    "__IS_PROD__": true,
+    "__IS_TEST__": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "rules": {
+  "no-plusplus": 0,
+  "jsx-a11y/anchor-is-valid": [ "error", {
+        "components": [ "Link" ],
+        "specialLink": [ "to", "hrefLeft", "hrefRight" ],
+        "aspects": [ "noHref", "invalidHref", "preferButton" ]
+   }],
+   "jsx-a11y/label-has-for": [ 2, {
+            "components": [ "Label" ],
+            "required": {
+                "every": [ "id" ]
+            },
+            "allowChildren": false
+        }],
+  "import/extensions": 0,
+  "import/prefer-default-export": 0,
+  "import/no-extraneous-dependencies": 0,
+  "import/no-unresolved": 0,
+  "global-require": 0,
+  "react/jsx-filename-extension": 0,
+  "react/no-typos": 0,
+  "import/no-named-as-default": 0,
+  "jest/no-disabled-tests": 0,
+  "jest/no-focused-tests": "error",
+  "jest/no-identical-title": "error",
+  "jest/valid-expect": "error"
+  },
+  "plugins": [
+    "import",
+    "react",
+    "jsx-a11y",
+    "jest",
+    "jsdoc"
+  ],
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src"
+        ]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/**
+coverage/**
+**/dist/**
+
+dist/**
+/back_dist/**
+static/**
+dev-static/**
+
+flow-typed/**
+out/**

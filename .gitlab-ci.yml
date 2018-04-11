@@ -1,0 +1,33 @@
+image: 'nonlux/docker-node'
+stages:
+  - install
+  - test
+  - build
+  - deploy
+  - post
+cache:
+  paths:
+    - node_modules/
+
+install:
+  stage: install
+  script:
+    - npm ci
+
+eslint:
+  stage: test
+  script:
+    - npm run lint
+jest:
+  stage: test
+  script:
+    - npm run test
+
+buildStory:
+  stage: build
+  script:
+    - 'npm run storybook:build'
+build:
+  stage: build
+  script:
+    - 'npm run webpack:build'
