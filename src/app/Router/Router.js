@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
 import { Layout } from 'components';
 
-import { IndexPage } from 'pages';
+import { AccountPage, BillsPage } from 'pages';
 
 /**
  * Роутер приложения
@@ -14,7 +14,11 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Layout>
-        <Route path="/" exact component={IndexPage} />
+        <Switch>
+          <Redirect from="/" exact to="account" />
+          <Route path="/account" exact component={AccountPage} />
+          <Route path="/bills" exact component={BillsPage} />
+        </Switch>
       </Layout>
     </BrowserRouter>
   );

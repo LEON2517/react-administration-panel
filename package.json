@@ -73,6 +73,7 @@
     "aphrodite": "^1.2.3",
     "axios": "^0.17.0",
     "babel-polyfill": "^6.23.0",
+    "bootstrap": "^4.1.0",
     "classnames": "^2.2.5",
     "eslint-plugin-jsdoc": "^3.3.0",
     "formik": "^0.10.5",
